@@ -1,0 +1,227 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4; /* Fondo gris claro */
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #007BFF; /* Azul brillante */
+    color: white; /* Texto blanco */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiar el fondo del contenedor */
+header .container {
+    background-color: #0061c9; 
+    padding: 0; 
+}
+header img {
+    width: 80%;
+    border-radius: 2%;
+}
+
+/* Contenedor principal */
+.container {
+    width: 85%;
+    margin: 40px auto;
+    background-color: #007BFF; /* Fondo blanco */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezados de sección */
+h2 {
+    color: #ffffff; /* Azul brillante */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Secciones individuales para cada paso */
+.step {
+    margin-bottom: 25px;
+}
+
+.step h3 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.step p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Botón de descarga */
+.download {
+    background-color: #FF6F00; /* Naranja */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.download:hover {
+    background-color: #E65100; /* Naranja oscuro */
+}
+
+/* Estilo de imágenes dentro de cada paso */
+.step img {
+    max-width: 3%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contacto .container {
+    width: 90%; /* Ancho del contenedor */
+    text-align: center; /* Centrar texto */
+    padding: 5px; /* Reducir el padding para disminuir la altura y mantener el texto cerca */
+    margin: 20px auto; /* Centrar el contenedor */
+}
+
+#contacto form {
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Colocar los elementos en columna */
+    align-items: center; /* Centrar elementos */
+    margin-bottom: 5px; /* Espacio entre el formulario y el texto */
+}
+
+#contacto label {
+    margin: 0; /* Eliminar margen */
+    padding: 2px; /* Opcional: agregar un poco de padding para un mejor espaciado */
+    color: #ffffff; /* Color de la etiqueta */
+}
+
+#contacto p {
+    margin: 2px 0; /* Establecer margen muy pequeño arriba y abajo */
+    color: #ffffff; /* Color del texto */
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #007BFF; /* Azul brillante */
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    box-shadow: 0 -4px 4px rgba(255, 255, 255, 0.1);
+}
+footer .container{
+    background-color: #0061c9; 
+    padding: 0;
+    height: 50px; /* Cambia este valor según tus necesidades */
+    overflow: auto;
+}
+footer p {
+    margin: 0;
+}
+
+/* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    header img {
+        width: 80px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .step h3 {
+        font-size: 1.1rem;
+    }
+}
+
+.chatbot-avatar {
+    width: 200px; /* Ajusta el tamaño según sea necesario */
+    height: 200px; /* Ajusta el tamaño según sea necesario */
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    position: fixed; /* Mantiene el botón en una posición fija */
+    bottom: 20px; /* Ajusta la posición desde el fondo */
+    right: 20px; /* Ajusta la posición desde la derecha */
+    background-color: transparent; /* Color de fondo transparente */
+    cursor: pointer; /* Cambia el cursor cuando pasa sobre el botón */
+}
+
+.chatbot-avatar img {
+    width: 100%; /* Asegúrate de que la imagen ocupe todo el contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    display: block; /* Elimina el espacio extra en la parte inferior de la imagen */
+}
+
+/* Estilo para la ventana del chatbot */
+.chatbot-window {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.chatbot-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.chatbot-header .close-chatbot {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.chatbot-body {
+    padding: 10px;
+    color: white;
+}
+
+.chatbot-body p {
+    color: #333; /* Cambiar el color del texto */
+    font-size: 1rem; /* Cambiar el tamaño de la fuente */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+/* Estilo para el mensaje de ayuda */
+.chatbot-message {
+    position: fixed;
+    bottom: 180px; /* Ajusta la posición para que esté arriba del avatar */
+    right: 20px;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot-message .chatbot-text {
+    margin-top: 5px;
+}

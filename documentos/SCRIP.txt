@@ -1,0 +1,18 @@
+// scripts.js
+
+// Obtén el avatar y la ventana del chatbot
+const chatbotAvatar = document.querySelector('.chatbot-avatar');
+const chatbotWindow = document.getElementById('chatbotWindow');
+const closeChatbotBtn = document.querySelector('.close-chatbot');
+
+// Mostrar el chatbot cuando se hace clic en el avatar
+chatbotAvatar.addEventListener('click', function() {
+    chatbotWindow.style.display = 'block';
+    chatbotAvatar.style.display = 'none'; // Oculta el avatar al abrir el chat
+});
+
+// Cerrar el chatbot cuando se hace clic en la "X"
+closeChatbotBtn.addEventListener('click', function() {
+    chatbotWindow.style.display = 'none';
+    chatbotAvatar.style.display = 'flex'; // Muestra el avatar al cerrar el chat
+});

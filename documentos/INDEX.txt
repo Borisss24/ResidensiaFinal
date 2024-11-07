@@ -1,0 +1,100 @@
+DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residencia Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="ITTOL.png" alt="Logo Tecnológico Nacional">
+            
+            <nav>
+                <ul>
+                    <!-- Puedes descomentar las siguientes líneas si quieres incluir los enlaces -->
+                    <!-- <li><a href="#documentos">Documentos</a></li>
+                    <li><a href="#contacto">Contacto</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="proceso" class="section">
+            <div class="container">
+                <h2>Residencia profesional</h2>
+                <div class="step">
+                    <h3>Paso 1: Revisión de Requisitos</h3>
+                    <p>Consulta los requisitos y verifica que cumples con todos los criterios necesarios para iniciar tu residencia profesional.</p>
+                    
+                    <a href="documentos/Revisón.pdf" class="download" download>Descargar Formulario de Inscripción</a>
+                    <img src="pdfD.png" alt="Imagen Revisión">
+                </div>
+                <div class="step">
+                    <h3>Paso 2: Inscripción en el Proceso</h3>
+                    <p>Completa el formulario de inscripción y entrega los documentos solicitados en la coordinación de residencias.</p>
+                    <a href="documentos/inscripcion.pdf" class="download" download>Descargar Formulario de Inscripción</a>
+                    <img src="pdfD.png" alt="Imagen inscripción">
+                </div>
+                <div class="step">
+                    <h3>Paso 3: Asignación de Asesor</h3>
+                    <p>Una vez aprobada tu inscripción, se te asignará un asesor académico para guiarte en tu proyecto.</p>
+                    <a href="documentos/asesor.pdf" class="download" download>Descargar Información del Asesor</a>
+                    <img src="pdfD.png" alt="Imagen asignación asesor">
+                </div>
+                <div class="step">
+                    <h3>Paso 4: Desarrollo del Proyecto</h3>
+                    <p>Desarrolla tu proyecto de residencia con la supervisión de tu asesor y de acuerdo a los lineamientos establecidos.</p>
+                    <a href="documentos/desarrollo.pdf" class="download" download>Descargar Guía de Desarrollo</a>
+                    <img src="pdfD.png" alt="Imagen desarrollo proyecto">
+                </div>
+                <div class="step">
+                    <h3>Paso 5: Evaluación Final</h3>
+                    <p>Presenta tu informe final y defiende tu proyecto ante un jurado evaluador.</p>
+                    <a href="documentos/evaluacion.pdf" class="download" download>Descargar Lineamientos de Evaluación</a>
+                    <img src="pdfD.png" alt="Imagen evaluación final">
+                </div>
+            </div>
+        </section>
+        <section id="contacto" class="section">
+            <div class="container">
+                <h2>Contacto para Dudas y Sugerencias</h2>
+                <form>
+                    <label for="email">Correo Electrónico:</label><br>
+                    <label for="message">DudasySugerencias@toluca.tecnm.mx</label><br>
+                </form>
+                <p>Teléfono: 123-456-7890</p>
+            </div>
+        </section>
+    </main>
+    <footer id="Derechos" class="section">
+    
+        <div class="container">
+            <p>© 2024 Residencia Profesional. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+   <!-- Contenedor del Avatar del Chatbot con texto -->
+   <div class="chatbot-message" id="chatbotTrigger">
+    <div id="chatbotAvatar" class="chatbot-avatar">
+        <img src="2.png" alt="Volti">
+    </div>
+    <p class="chatbot-text">¿Ayuda?</p>
+</div>
+
+<!-- Ventana del Chatbot -->
+<div id="chatbotWindow" class="chatbot-window" style="display: none;">
+    <div class="chatbot-header">
+        <span class="close-chatbot">×</span>
+        <h2>Volti ChatBot</h2>
+    </div>
+    <div class="chatbot-body">
+        <!-- Aquí iría la integración del chatbot -->
+        <p>¡Hola! ¿En qué puedo ayudarte?</p>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>

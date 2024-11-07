@@ -1,0 +1,437 @@
+/* Estilos generales del cuerpo */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #003366;
+    padding: 10px 0;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar nav ul li {
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilos para el contenido principal */
+.content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.content h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.content ul {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+.content ul li {
+    margin-bottom: 8px;
+}
+
+/* Estilos para las pestañas */
+.tab-container {
+    margin-top: 30px; /* Espacio entre el contenido principal y las pestañas */
+}
+
+.tabs {
+    display: flex;
+    justify-content: center; /* Centra las pestañas */
+    margin-bottom: 10px; /* Espacio entre las pestañas y el contenido */
+}
+
+.tab {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 0 0; /* Bordes redondeados en la parte superior */
+    margin-right: 5px; /* Espacio entre las pestañas */
+    cursor: pointer; /* Cambia el cursor a pointer al pasar sobre la pestaña */
+}
+
+.tab.active {
+    background-color: #003366; /* Color de fondo para la pestaña activa */
+    color: white; /* Color de texto para la pestaña activa */
+}
+
+.tab-content {
+    border: 1px solid #ccc; /* Borde alrededor del contenido */
+    border-radius: 0 0 5px 5px; /* Bordes redondeados en la parte inferior */
+    padding: 20px; /* Espaciado interno del contenido */
+}
+
+.tab-item {
+    display: none; /* Oculta todos los elementos de contenido */
+}
+
+.tab-item.active {
+    display: block; /* Muestra el elemento de contenido activo */
+}
+
+/* Estilos para las imágenes en la sección de pasos */
+.tab-content img {
+    width: 32px;  /* Ajusta el tamaño de la imagen */
+    height: 32px;
+    vertical-align: middle; /* Alineación vertical */
+    margin-left: 10px; /* Espacio entre el texto y la imagen */
+    display: inline-block; /* Mantiene la imagen en línea con el texto */
+}
+
+/* Estilos generales para la ventana del chatbot */
+.chatbot-window {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px; /* Ancho de la ventana */
+    max-height: 400px; /* Altura máxima */
+    background-color: white; /* Color de fondo */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    display: none; /* Ocultado por defecto */
+    z-index: 1000; /* Asegúrate que esté encima de otros elementos */
+}
+
+/* Estilo para el encabezado del chatbot */
+.chatbot-header {
+    background-color: #4CAF50; /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    border-top-left-radius: 10px; /* Esquina superior izquierda redondeada */
+    border-top-right-radius: 10px; /* Esquina superior derecha redondeada */
+    display: flex; /* Para alinear el contenido */
+    align-items: center; /* Centrar verticalmente */
+}
+
+/* Estilo para el cuerpo del chatbot */
+.chatbot-body {
+    padding: 10px; /* Espaciado interno */
+    overflow-y: auto; /* Habilitar desplazamiento vertical */
+    max-height: 300px; /* Altura máxima para el cuerpo */
+}
+
+/* Estilo para la lista de opciones */
+#optionsList {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin espaciado */
+}
+
+#optionsList li {
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    padding: 8px; /* Espaciado interno */
+    border: 1px solid transparent; /* Borde transparente para efectos */
+    transition: background-color 0.3s, border 0.3s; /* Transición suave */
+}
+
+#optionsList li:hover {
+    background-color: #f0f0f0; /* Color de fondo al pasar el ratón */
+    border: 1px solid #4CAF50; /* Borde verde al pasar el ratón */
+}
+
+/* Estilo para el contenido */
+#content {
+    margin-top: 10px; /* Espacio superior */
+}
+
+/* Estilo para el botón de volver */
+#backButton {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 8px 12px; /* Espaciado interno */
+    border-radius: 5px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    margin-top: 10px; /* Espacio superior */
+    display: inline-block; /* Mostrar como bloque en línea */
+}
+
+#backButton:hover {
+    background-color: #45a049; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilo para el contenedor del avatar y el mensaje de ayuda */
+.chatbot-trigger {
+    position: fixed;
+    bottom: 90px;
+    right: 10px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+    display: flex; /* Habilita flexbox */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra horizontalmente los elementos */
+}
+
+/* Estilo para el texto "¿Ayuda?" */
+.chatbot-trigger p {
+    margin: 0; /* Elimina márgenes alrededor del texto */
+    font-weight: bold; /* Estilo del texto */
+    align-self: flex-start; /* Alinea el texto al principio del contenedor */
+    margin-left: 70px; /* Ajusta este valor para mover el texto más a la derecha */
+    margin-top: -120px; /* Cambia este valor para mover el avatar hacia abajo */
+}
+
+/* Estilo para el avatar */
+.chatbot-avatar img {
+    width: 180px; /* Ajusta el tamaño del avatar */
+    height: 90px;
+}
+
+/* Estilos para el encabezado del chatbot */
+.chatbot-header {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex; /* Usar flex para alinear elementos */
+    align-items: center; /* Alinear verticalmente */
+    justify-content: space-between; /* Espacio entre elementos */
+}
+
+/* Estilo para la imagen del avatar en el encabezado */
+.chatbot-header img {
+    width: 150px; /* Cambia este valor al tamaño deseado */
+    height: 80px; /* Cambia este valor al tamaño deseado */
+    vertical-align: middle; /* Mantiene la alineación vertical */
+    margin-left: -50px; /* Ajusta este valor para mover la imagen más a la izquierda */
+    margin-right: -50px; /* Margen entre la imagen y el texto */
+}
+
+/* Estilo para el botón de cerrar */
+#closeChatbot {
+    cursor: pointer;
+    margin-left: 10px; /* Espacio entre la "X" y el avatar */
+}
+
+/* Estilos para el cuerpo del chatbot */
+.chatbot-body {
+    padding: 10px; /* Espaciado interno */
+    overflow-y: auto; /* Habilitar desplazamiento vertical */
+    max-height: 300px; /* Altura máxima para el cuerpo */
+}
+
+/* Estilos para el contenedor de los mensajes */
+#messages {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin espaciado */
+}
+
+#messages li {
+    padding: 5px; /* Espacio entre mensajes */
+    margin: 5px 0; /* Espacio entre elementos de lista */
+    background-color: #f1f1f1; /* Color de fondo de los mensajes */
+    border-radius: 5px; /* Esquinas redondeadas */
+}
+/* Botón de descarga */
+.download {
+    color: #003366;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.download-container {
+    display: flex; /* Alinea la imagen y el texto en una fila */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+.download-container span {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-left: 8px; /* Espacio entre la imagen y el texto */
+    color: #666; /* Color gris */
+    font-style: italic; /* Estilo cursivo */
+    font-size: 0.9rem; /* Ajusta el tamaño del texto si es necesario */
+}
+/* Estilo para las descargas */
+.download-section {
+    margin-top: 20px; /* Espacio superior */
+}
+
+.download-section h2 {
+    font-size: 1.5rem; /* Tamaño de fuente */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+.download-section ul {
+    list-style: none; /* Sin viñetas */
+    padding: 0; /* Sin espaciado */
+}
+
+.download-section li {
+    margin: 5px 0; /* Espacio entre descargas */
+}
+/* Estilo para las descargas */
+.download-section {
+    margin-top: 20px;
+}
+
+.download-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.download-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.download-section li {
+    margin: 5px 0;
+}
+
+/* Centrar el iframe en su contenedor */
+iframe {
+    display: block;        /* Hace que el iframe sea un bloque */
+    margin: 0 auto;        /* Centra el iframe en su contenedor */
+    border: 1px solid #ccc; /* Opcional: añade un borde alrededor del iframe */
+    border-radius: 8px;    /* Opcional: redondea los bordes del iframe */
+}
+
+/* Asegurarse de que el contenedor del PDF también esté centrado */
+.tab-item {
+    text-align: justify;    /* Centra el contenido dentro de la tab-item */
+}
+
+
+/* Estilos de consulta para dispositivos móviles */
+@media (max-width: 600px) {
+    .navbar nav ul {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+
+    .tab {
+        padding: 15px 25px; /* Aumenta el padding para mejorar la usabilidad en móviles */
+    }
+
+    .content {
+        margin: 20px; /* Espaciado adaptable */
+        padding: 10px; /* Espaciado adaptable */
+    }
+
+    .content h1 {
+        font-size: 1.5rem; /* Tamaño más pequeño para h1 */
+    }
+
+    .content h2 {
+        font-size: 1.2rem; /* Tamaño más pequeño para h2 */
+    }
+
+    .chatbot-avatar img {
+        width: 100px; /* Tamaño de avatar más pequeño para móviles */
+        height: 50px; /* Ajuste de altura */
+    }
+
+    #backButton {
+        padding: 6px 10px; /* Espaciado más pequeño para móviles */
+    }
+}
+/* Opcional: para un mejor control del contenedor */
+.download-container {
+    text-align:justify;    /* Centra los elementos dentro de este contenedor */
+    margin-top: 10px;      /* Ajuste opcional del margen */
+}
+
+
+
+/* Contenedor principal del PDF y la información adicional */
+.pdf-section {
+    margin: 20px; /* Espacio superior */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f9f9f9; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilo para centrar el botón */
+#showPdfButton {
+    display: block;
+    margin: 0 auto 20px; /* Centra el botón y agrega margen inferior */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #003366; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    font-size: 16px; /* Tamaño de la fuente */
+}
+
+#showPdfButton:hover {
+    background-color: #002244; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilo para el contenedor del PDF y la información adicional */
+.pdf-container {
+    display: flex; /* Usar flexbox para alinear el PDF y la información adicional en fila */
+    justify-content: space-between; /* Espacio entre el PDF y la información adicional */
+    align-items: flex-start; /* Alinea al principio en vertical */
+}
+
+/* Estilo para la visualización del PDF */
+.pdf-viewer {
+    flex:content; /* Toma la mitad del ancho disponible */
+    margin-right: 10px; /* Espacio entre el PDF y la información adicional */
+    margin-left: 10px;
+}
+
+/* Contenedor de la información adicional */
+.additional-info {
+    flex: 1; /* Toma la otra mitad del ancho */
+    color: #333; /* Color de texto */
+}
+
+.additional-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+.additional-info p {
+    font-size: 1rem;
+    margin-bottom: 15px; /* Espacio inferior */
+}
+
+.additional-info a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.additional-info a:hover {
+    color: #002244; /* Color más oscuro cuando se pasa el ratón */
+}
